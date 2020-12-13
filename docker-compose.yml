@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  docker-clojure:
+    # How to run the docker container in shell
+    # docker-compose run --rm docker-python /bin/bash
+    build: .
+    volumes:
+     - ./:/home/
+    stdin_open: true
+    tty: true
